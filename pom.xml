@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.adorsys.cmer</groupId>
+	<artifactId>cmer</artifactId>
+
+	<properties>
+		<api.version>1.0.1</api.version>
+		<maven.version>2.2.1</maven.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven.enforcer</groupId>
+			<artifactId>enforcer-api</artifactId>
+			<version>${api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-project</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-core</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-artifact</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-container-default</artifactId>
+			<version>1.0-alpha-9</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.9</version>
+		</dependency>
+	</dependencies>
+	<version>1.0-SNAPSHOT</version>
+	<name>Comon Maven Enforcer Rules</name>
+	<organization>
+		<name>adorsys GmbH &amp; Co KG</name>
+		<url>http://www.adorsys.de</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>ASL2</name>
+		</license>
+	</licenses>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<version>1.9.0</version>
+				<configuration>
+					<header>src/etc/header.txt</header>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
